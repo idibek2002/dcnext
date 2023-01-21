@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="website icon" href="./img/dc_logo.svg">
+    <link rel="stylesheet" href="css/Home.css">
+    <title>DC Next</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+        <div class="camera"></div>
+        </div>
+        <div class="menu">
+            <div class="logo">
+                <div class="menu__toggle">
+                    <span class="item__1"></span>
+                    <span class="item__1"></span>
+                    <span class="item__2"></span>
+                </div>
+                <div class="logodc"><img src="./img/dc_logo.svg" alt="">
+                </div>
+                <div class="qrcode">
+                    <a href="#">
+                <i class="bi bi-qr-code"></i></a>
+                </div>
+                <div class="rington">
+                    <a href="#">
+                    </a>
+                </div>
+            </div> 
+        </div>
+        <div class="main">
+        <div class="search">
+            <input type="text" placeholder="Поиск">
+            <img class="image" src="./img/search.png" alt="" width="15px">
+        </div>
+        <div class="balance">
+            <div class="balance__all">
+            <h3>0,00</h3>
+            <h1><div id="data__times"></div></h1>
+            <div class="eyeref">
+                <a href="eye.html">
+            <div class="eye"><i class="bi bi-eye"></i></div></a>
+            <a href="Home.html">
+            <div class="refresh"><i class="bi bi-arrow-repeat"></i></div></a>
+            </div>
+            </div>
+        </div>
+        <div class="historyplatezh">
+            <a href="#">
+            <div class="platezh">
+                <div class="image">
+                <img src="./img/dc_logo.svg" alt="" width="22px"></div>
+                <h6>DC по номеру телефона</h6>
+            </div></a>
+            <a href="#">
+            <div class="platezh">
+                <div class="image">
+                    <img src="./img/megafon.jpg" alt="" width="25px">
+                </div>
+                <div class="close">
+                <span></span>
+                <span></span>
+                </div>
+                <h6>ZET-MOBILE</h6>
+            </div></a>
+        </div>
+        <h4>Избранные</h4>
+        <div class="block">
+            <a href="#"><div class="block__item">
+                <h5>удобные денежные<br>переводы в казахстан</h5>
+                <div class="image">
+                    <img src="./img/dc_logo.svg" alt="" width="19px">
+                </div>
+            </div></a>
+            <a href="#">
+            <div class="block__item">
+                <h3>дастрас</h3>
+                <h5>с помощью<span> DC Next</span></h5>
+                <h2>0</h2><h6>%до 30 дней</h6>
+                <div class="image">
+                    <img src="./img/dc_logo.svg" alt="" width="19px">
+                </div>
+            </div></a>
+        </div>
+        <div class="blockitem1">
+            <a href="oplatauslugi.html"><div class="block__item1 item1" style="background-color: rgb(58, 129, 216);">
+                <h5>Оплата услуг</h5>
+                <h6>Мобильная связь,<br>Интернет, Коммунальные<br>услуги</h6>
+                </div></a>
+                <a href="#">
+            <div class="block__item1 item2" style="background-color: rgb(117, 41, 158);">
+                <h3>Карты</h3>
+            </div></a>
+        </div>
+        <div class="blockitem1">
+            <a href="#">
+                <div class="block__item1 item2" style="background-color: rgb(74, 204, 51);">
+                    <h3>Кредиты</h3>
+                </div>
+            </a>
+            <a href="#">
+            <div class="block__item1 item2" style="background-color: rgb(229, 41, 69);">
+                <h3>Депозиты</h3>
+            </div></a>
+            <a href="#">
+            <div class="block__item1 item2" style="background-color: rgb(141, 141, 141);">
+                <h3>Новости</h3>
+            </div></a>
+        </div>
+        <div class="blockitem1">
+            <a href="#">
+                <div class="block__item1 item2" style="background-color: rgb(66, 66, 63);">
+                    <h3>Документы</h3>
+                </div>
+            </a>
+            <a href="#">
+                <div class="block__item1 item1" style="background-color: rgb(25, 71, 162);">
+                    <h5>CityCart</h5>
+                    <h6>Пополнение счета<br>транспортной карты</h6>
+                </div>
+            </a>
+        </div>
+        <div class="topik"></div>
+    </div>
+    <div class="footer">
+        <div class="scanner"></div>
+        <div class="foot">
+        <ul>
+            <a href="#"><li><img class="imagefoot" src="./img/house-door.svg" alt="">Главная</li></a>
+            <a href="#"><li><img class="perevod" src="./img/house-door.svg" alt="">Переводы</li></a>
+            <li></li>
+            <li></li>
+            <li></li>
+            <a href="#"><li><img class="imagefoot" src="./img/house-door.svg" alt="">Сервисы</li></a>
+            <a href="#"><li><img class="imagefoot" src="./img/clock.svg" alt="">История</li></a>
+        </ul>
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript">
+        function zero_first_format(value) {
+            if (value < 10) {
+                value = '0' + value;
+            }
+            return value;
+        }
+
+        /* функция получения текущей даты и времени */
+        function date_time() {
+            var current_datetime = new Date();
+            var day = zero_first_format(current_datetime.getDate());
+            var month = zero_first_format(current_datetime.getMonth() + 1);
+            var year = current_datetime.getFullYear();
+            var hours = zero_first_format(current_datetime.getHours());
+            var minutes = zero_first_format(current_datetime.getMinutes());
+            var seconds = zero_first_format(current_datetime.getSeconds());
+            return day + "." + month + "." + 23 + " - " + hours + ":" + minutes + ":" + seconds;
+        }
+        document.getElementById('data__times').innerHTML = date_time();
+    </script>
+</body>
+</html>
